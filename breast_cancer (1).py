@@ -29,7 +29,7 @@ print('Train Score is : ' , LRModel.score(X_train, y_train))
 print('Test Score is : ' , LRModel.score(X_test, y_test))
 
 #Applying Prediction
-y_pred = LogisticRegressionModel.predict(X_test)
+y_pred = LRModel.predict(X_test)
 
 #Calculating Confusion Matrix
 CM = confusion_matrix(y_test, y_pred)
